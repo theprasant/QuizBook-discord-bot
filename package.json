@@ -1,0 +1,33 @@
+{
+  "name": "querybot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "ingest": "tsx src/rag/ingest.ts",
+    "ask": "tsx src/rag/ask.ts",
+    "create-vector-index": "tsx src/rag/create-vector-index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests configured yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.1",
+    "dotenv": "^17.4.2",
+    "googleapis": "^171.4.0",
+    "mongodb": "^7.2.0",
+    "openai": "^6.34.0"
+  }
+}

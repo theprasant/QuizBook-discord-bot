@@ -1,0 +1,24 @@
+{
+  "openai": {
+    "model": "gpt-5-mini",
+    "embeddingModel": "text-embedding-3-small",
+    "embeddingDimensions": 1536
+  },
+  "mongodb": {
+    "dbName": "querybot",
+    "chunksCollection": "document_chunks",
+    "conversationsCollection": "conversations",
+    "vectorIndex": "document_chunks_vector_index"
+  },
+  "google": {
+    "docId": "your_google_doc_id_here"
+  },
+  "rag": {
+    "sourceId": "main-google-doc",
+    "topK": 5,
+    "conversationHistoryLimit": 8
+  },
+  "bot": {
+    "adminUserIds": []
+  }
+}
