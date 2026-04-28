@@ -24,6 +24,7 @@ interface AppConfig {
   };
   bot?: {
     adminUserIds?: string[];
+    adminRoleIds?: string[];
   };
 }
 
@@ -60,6 +61,7 @@ export const ragSourceId = config.rag.sourceId || googleDocId;
 export const ragTopK = config.rag.topK;
 export const ragConversationHistoryLimit = config.rag.conversationHistoryLimit;
 export const botAdminUserIds = config.bot?.adminUserIds ?? [];
+export const botAdminRoleIds = config.bot?.adminRoleIds ?? [];
 
 function loadConfig(): AppConfig {
   const configPath = path.resolve("config.json");

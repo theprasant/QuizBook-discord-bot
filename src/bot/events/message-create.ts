@@ -6,12 +6,9 @@ import { appendConversationTurn, getRecentConversation } from "../../rag/convers
 import { replyInChunks } from "../utils/discord-messages.js";
 
 export async function handleMessageCreate(message: Message): Promise<void> {
-  // console.log(`Received message from ${message.author.tag}: ${message.content}`);
   if (message.author.bot || message.channel.type !== ChannelType.DM) {
-    console.log('Message ignored: either from a bot or not a DM');
     return;
   }
-  console.log('Processing message...');
 
   const question = message.content.trim();
 

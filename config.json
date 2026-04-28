@@ -19,6 +19,7 @@
     "conversationHistoryLimit": 8
   },
   "bot": {
-    "adminUserIds": []
+    "adminUserIds": ["745688196440129915"],
+    "adminRoleIds": ["1404713311685312591", "1348661247339663430", "1343849807558606889"]
   }
 }
